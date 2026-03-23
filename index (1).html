@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<!--
+  My Favorite Restaurants - GitHub Pages Documentation
+  Student: Olivia Mongan
+  Description: Final documentation for the My Favorite Restaurants
+               mobile web application course project.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Favorite Restaurants — Project Documentation</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header */
+    .site-header {
+      background-color: #CC0000;
+      color: #ffffff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .site-header h1 {
+      margin: 0 0 8px 0;
+      font-size: 32px;
+    }
+    .site-header p {
+      margin: 0;
+      font-size: 16px;
+      color: #ffdddd;
+    }
+
+    /* Main content */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    /* Section headings */
+    h2 {
+      color: #CC0000;
+      font-size: 22px;
+      border-bottom: 3px solid #CC0000;
+      padding-bottom: 6px;
+      margin-top: 40px;
+    }
+    h3 {
+      color: #333333;
+      font-size: 18px;
+      margin-top: 24px;
+    }
+
+    /* Info box */
+    .info-box {
+      background-color: #fff5f5;
+      border-left: 4px solid #CC0000;
+      padding: 14px 18px;
+      margin: 16px 0;
+      border-radius: 0 6px 6px 0;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    /* Site map */
+    .site-map {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .map-box {
+      background-color: #CC0000;
+      color: #ffffff;
+      padding: 12px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      min-width: 140px;
+    }
+    .map-arrow {
+      font-size: 22px;
+      color: #CC0000;
+      align-self: center;
+    }
+
+    /* Page description cards */
+    .page-card {
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+    }
+    .page-card h3 {
+      margin-top: 0;
+      color: #CC0000;
+    }
+
+    /* Button table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    th {
+      background-color: #CC0000;
+      color: #ffffff;
+      padding: 10px 12px;
+      text-align: left;
+    }
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #eeeeee;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td {
+      background-color: #fff5f5;
+    }
+
+    /* Production URL link */
+    .prod-url {
+      display: inline-block;
+      background-color: #CC0000;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .prod-url:hover {
+      background-color: #990000;
+    }
+
+    /* Footer */
+    .site-footer {
+      background-color: #333333;
+      color: #ffffff;
+      text-align: center;
+      padding: 16px;
+      font-size: 13px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="site-header">
+    <h1>🍽️ My Favorite Restaurants</h1>
+    <p>Mobile Web Application — Course Project Documentation</p>
+    <p style="margin-top:6px; font-size:14px;">Student: Olivia Mongan &nbsp;|&nbsp; Mobile Application Development</p>
+  </div>
+
+  <div class="container">
+
+    <!-- SECTION 1: PURPOSE / SUMMARY -->
+    <h2>1. Purpose and Description</h2>
+    <div class="info-box">
+      <p>My Favorite Restaurants is a mobile web application built using HTML5, CSS3, and the jQuery Mobile framework. The purpose of the app is to give users a fun, easy-to-use guide to a curated list of favorite local and national restaurants. Users can browse featured restaurants, search by name or cuisine type, save their own personal favorites using web storage, and leave reviews. The app is fully responsive and works on phones, tablets, and desktop browsers.</p>
+    </div>
+
+    <!-- SECTION 2: SITE MAP -->
+    <h2>2. Website Structure / Site Map</h2>
+    <p>The application is a single HTML file using jQuery Mobile's multi-page structure. All pages share a consistent header, navigation bar, and footer. Users can navigate between pages using the nav bar, the slide-in panel, or the back button.</p>
+
+    <div class="site-map">
+      <div class="map-box">🏠 Home</div>
+      <div class="map-arrow">→</div>
+      <div class="map-box">🔍 Browse Restaurants</div>
+      <div class="map-arrow">→</div>
+      <div class="map-box">📊 Restaurant Grid</div>
+      <div class="map-arrow">→</div>
+      <div class="map-box">⭐ My Favorites</div>
+      <div class="map-arrow">→</div>
+      <div class="map-box">➕ Add a Favorite</div>
+      <div class="map-arrow">→</div>
+      <div class="map-box">✏️ Leave a Review</div>
+    </div>
+    <p style="font-size:14px; color:#666;">All pages are accessible from the navigation panel and the top navigation bar on every page.</p>
+
+
+    <!-- SECTION 3: PAGE DESCRIPTIONS AND BUTTONS -->
+    <h2>3. Page Descriptions, Buttons, and Actions</h2>
+
+    <!-- Page 1: Home -->
+    <div class="page-card">
+      <h3>🏠 Home Page</h3>
+      <p>The main landing page of the app. It welcomes the user and provides navigation buttons to all other sections of the app. It also contains the slide-in navigation panel accessible from the Menu button.</p>
+      <table>
+        <tr><th>Button / Element</th><th>User Action</th><th>Outcome</th></tr>
+        <tr><td>Menu (top left)</td><td>Tap to open</td><td>Slide-in navigation panel opens from the left with links to all pages</td></tr>
+        <tr><td>Browse Restaurants</td><td>Tap</td><td>Navigates to the Browse Restaurants filtered list page</td></tr>
+        <tr><td>Restaurant Grid</td><td>Tap</td><td>Navigates to the 4-column restaurant overview grid</td></tr>
+        <tr><td>My Favorites List</td><td>Tap</td><td>Navigates to the personal favorites list saved in web storage</td></tr>
+        <tr><td>Add a Favorite</td><td>Tap</td><td>Navigates to the form to save a new favorite restaurant</td></tr>
+        <tr><td>Leave a Review</td><td>Tap</td><td>Navigates to the review form</td></tr>
+      </table>
+    </div>
+
+    <!-- Page 2: Browse -->
+    <div class="page-card">
+      <h3>🔍 Browse Restaurants</h3>
+      <p>Displays a filtered jQuery Mobile listview of 10 restaurants. Users can type in the search box to filter results by restaurant name or cuisine type. Each list item links to the restaurant's official website.</p>
+      <table>
+        <tr><th>Button / Element</th><th>User Action</th><th>Outcome</th></tr>
+        <tr><td>Search box</td><td>Type a name or cuisine</td><td>List filters in real time to show matching restaurants</td></tr>
+        <tr><td>Restaurant list item</td><td>Tap</td><td>Opens the restaurant's official website in the browser</td></tr>
+        <tr><td>Back to Home</td><td>Tap</td><td>Returns to the Home page</td></tr>
+        <tr><td>Back button (header)</td><td>Tap</td><td>Returns to the previous page</td></tr>
+      </table>
+    </div>
+
+    <!-- Page 3: Grid -->
+    <div class="page-card">
+      <h3>📊 Restaurant Grid</h3>
+      <p>Displays a 4-column jQuery Mobile grid with a quick overview of each featured restaurant including cuisine type, best dish, and star rating.</p>
+      <table>
+        <tr><th>Button / Element</th><th>User Action</th><th>Outcome</th></tr>
+        <tr><td>Back to Home</td><td>Tap</td><td>Returns to the Home page</td></tr>
+        <tr><td>Back button (header)</td><td>Tap</td><td>Returns to the previous page</td></tr>
+      </table>
+    </div>
+
+    <!-- Page 4: My Favorites -->
+    <div class="page-card">
+      <h3>⭐ My Favorites</h3>
+      <p>Displays the user's personal list of saved favorite restaurants pulled from localStorage (web storage). The list updates automatically every time the page is opened.</p>
+      <table>
+        <tr><th>Button / Element</th><th>User Action</th><th>Outcome</th></tr>
+        <tr><td>Add a Favorite</td><td>Tap</td><td>Navigates to the Add a Favorite form page</td></tr>
+        <tr><td>Clear All Favorites</td><td>Tap</td><td>Removes all saved favorites from localStorage and clears the list</td></tr>
+        <tr><td>Back to Home</td><td>Tap</td><td>Returns to the Home page</td></tr>
+        <tr><td>Back button (header)</td><td>Tap</td><td>Returns to the previous page</td></tr>
+      </table>
+    </div>
+
+    <!-- Page 5: Add a Favorite -->
+    <div class="page-card">
+      <h3>➕ Add a Favorite</h3>
+      <p>A form that allows the user to save a new favorite restaurant to their personal list using web storage. The entry includes the restaurant name, cuisine type, and a reason for loving it.</p>
+      <table>
+        <tr><th>Button / Element</th><th>User Action</th><th>Outcome</th></tr>
+        <tr><td>Restaurant Name field</td><td>Type restaurant name</td><td>Captures the name to save</td></tr>
+        <tr><td>Cuisine Type field</td><td>Type cuisine type</td><td>Captures the cuisine type to save</td></tr>
+        <tr><td>Why Do You Love It field</td><td>Type a reason</td><td>Captures the reason to save</td></tr>
+        <tr><td>Save to My Favorites</td><td>Tap</td><td>Saves the entry to localStorage and shows a confirmation message</td></tr>
+        <tr><td>View My Favorites link</td><td>Tap (after saving)</td><td>Navigates to the My Favorites page to see the saved entry</td></tr>
+        <tr><td>Back to Home</td><td>Tap</td><td>Returns to the Home page</td></tr>
+      </table>
+    </div>
+
+    <!-- Page 6: Leave a Review -->
+    <div class="page-card">
+      <h3>✏️ Leave a Review</h3>
+      <p>A form where users can submit a restaurant review. The review is saved to localStorage and a confirmation message is shown after submitting. The form includes a text input, dropdown, radio buttons, textarea, and checkbox.</p>
+      <table>
+        <tr><th>Button / Element</th><th>User Action</th><th>Outcome</th></tr>
+        <tr><td>Your Name field</td><td>Type name</td><td>Captures reviewer name</td></tr>
+        <tr><td>Restaurant dropdown</td><td>Select restaurant</td><td>Captures restaurant visited</td></tr>
+        <tr><td>Rating radio buttons</td><td>Select 1–5 stars</td><td>Captures star rating</td></tr>
+        <tr><td>Your Review textarea</td><td>Type review</td><td>Captures written review comments</td></tr>
+        <tr><td>Would Recommend checkbox</td><td>Check or uncheck</td><td>Captures recommendation preference</td></tr>
+        <tr><td>Submit Review</td><td>Tap</td><td>Saves review to localStorage and shows confirmation message</td></tr>
+        <tr><td>Back to Home</td><td>Tap</td><td>Returns to the Home page</td></tr>
+      </table>
+    </div>
+
+
+    <!-- SECTION 4: PRODUCTION URL -->
+    <h2>4. Production Site URL</h2>
+    <p>The live application is hosted on Rasmussen SOTD and can be viewed at the link below:</p>
+    <a href="http://sotd.us/oliviamongan/Mod4CourseProject/index.html" class="prod-url" target="_blank">
+      🌐 View Live App — sotd.us/oliviamongan/Mod4CourseProject/index.html
+    </a>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="site-footer">
+    <p>&copy; 2025 Olivia Mongan &nbsp;|&nbsp; My Favorite Restaurants &nbsp;|&nbsp; Mobile Application Development</p>
+  </div>
+
+</body>
+</html>
